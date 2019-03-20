@@ -168,7 +168,7 @@ nav ul li a {
   height: 300px;
   width: 100%;
   background-image: url('img/coffee-beans-2.jpg');
-  background-size: cover;
+  background-size: 100% auto;
   background-position: center;
 }
 
