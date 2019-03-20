@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background: rgb(58, 58, 58);
+  font-family: Helvetica, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*  Header */
+
+header {
+  background-color: rgb(29, 29, 29);
+  background-image: url("img/brick-wall.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 290px;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-name {
+  position: relative;
+  top: 60px;
+  color: #fff;
+}
+
+header nav {
+  z-index: 1000;
+  background-size: cover;
+  background: rgba(237, 224, 208, 0.63);
+  height: 60px;
+  /* height: 60px; */
+  padding: 5px;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+header nav .buttons {
+  height: 60px;
+}
+
+nav .logo {
+  background-image: url("img/coffeelogo.png");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  margin-left: 10px;
+  float:left;
+}
+
+nav .nav-toggle-btn {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-radius:40%;
+  background-image: url("img/menubars.png");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
+  cursor: pointer;
+  float: right;
+}
+
+nav ul {
+  margin: 5px 0;
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+nav ul li {
+  margin: 2px 0;
+  line-height: 52px;
+  opacity: 0;
+  transition: all 0.5s ease 0.1s;
+  /* background: rgba(237, 224, 208, 0.73); */
+}
+
+nav ul li:first-child {
+  transition-delay: ;
+}
+
+nav ul li:nth-child(2) {
+  transition-delay: 0.15s;
+}
+
+nav ul li:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+nav ul li:last-child {
+  transition-delay: 0.25s;
+}
+
+nav ul li a {
+  color: black;
+  font-weight: 600;
+
+}
+
+/* RESPONSIVE RULES */
+/* @media screen and (min-width: 400px) {
+  header {
+    background-size: cover;
+    background-position: 0 0px;
+  }
+} */
+/* FEATURES */
+
+.features {
+  background: white;
+  color: gray;
+  padding: 30px;
+
+}
+
+.features div h2{
+  color: black;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
+.menu-items figure {
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  width: 200px;
+}
+
+.menu-items figure img {
+  border: 1px solid white;
+  border-radius: 50%;
+  box-shadow: gray 0 0 10px;
+  width: 200px;
+  margin: 20px 0;
+}
+
+.section2 {
+  height: 300px;
+  width: 100%;
+  background-image: url('img/coffee-beans-2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.section2 div {
+  background: rgba(237, 224, 208, 0.6);
+  padding: 5px;
+  width: 60%;
+  position: relative;
+  top: 50%;
+  left: 35%;
+  transform:  translateY(-50%);
+  text-align: center;
+  color: #111;
+  font-style: italic;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+footer {
+  background: black;
+  padding: 20px;
+  font-size: 12px;
+  color: gray;
+  text-align: center;
+}
