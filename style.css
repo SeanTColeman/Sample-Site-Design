@@ -5,7 +5,8 @@
 }
 
 body {
-  background: rgb(58, 58, 58);
+  background: #fff;
+  color: #3d3a35;
   font-family: Helvetica, arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -28,7 +29,6 @@ header {
   overflow: hidden;
 }
 
-
 header a {
   color: white;
   text-decoration: none;
@@ -46,7 +46,6 @@ header nav {
   background-size: cover;
   background: rgba(237, 224, 208, 0.63);
   height: 60px;
-  /* height: 60px; */
   padding: 5px;
   margin: 0;
   transition: all 0.3s ease-in-out;
@@ -70,8 +69,7 @@ nav .logo {
 nav .nav-toggle-btn {
   width: 50px;
   height: 50px;
-  margin: 5px;
-  border-radius:40%;
+  margin: 5px;;
   background-image: url("img/menubars.png");
   background-repeat: no-repeat;
   background-size: 90%;
@@ -121,26 +119,27 @@ nav ul li a {
 
 /* RESPONSIVE RULES */
 /* @media screen and (min-width: 400px) {
-  header {
-    background-size: cover;
-    background-position: 0 0px;
-  }
-} */
+
 /* FEATURES */
 
 .features {
   background: white;
   color: gray;
-  padding: 30px;
+  padding: 20px;
 
 }
 
 .features div h2{
   color: black;
   display: block;
-  text-align: center;
-  margin-bottom: 10px;
+  margin: 10px 0 0 0;
 }
+
+.header-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 .menu-items {
   display: flex;
@@ -162,6 +161,23 @@ nav ul li a {
   box-shadow: gray 0 0 10px;
   width: 200px;
   margin: 20px 0;
+}
+
+figure img, div img {
+
+  width: 100%;
+  margin: 20px 0;
+}
+
+
+
+
+@media screen and (min-width: 600px) {
+  .header-img{
+    width:40%;
+  }
+
+
 }
 
 .section2 {
@@ -193,4 +209,32 @@ footer {
   font-size: 12px;
   color: gray;
   text-align: center;
+}
+
+.main-content {
+  position: relative;
+  padding-top: 32px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.region {
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.region img {
+  max-width: 100%;
+}
+
+
+.heading-landing {
+  margin: .25em 0 .66667em;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 1.25;
 }
