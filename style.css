@@ -132,12 +132,22 @@ nav ul li a {
 .features div h2{
   color: black;
   display: block;
-  margin: 10px 0 0 0;
+
 }
 
 .header-item {
   display: flex;
   flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.headertext {
+  margin-top: 20px;
+}
+
+.headertext p {
+    margin-top: 10px;
+    line-height: 25px;
 }
 
 
@@ -164,9 +174,9 @@ nav ul li a {
 }
 
 figure img, div img {
-
   width: 100%;
-  margin: 20px 0;
+  height: auto;
+
 }
 
 
@@ -175,6 +185,11 @@ figure img, div img {
 @media screen and (min-width: 600px) {
   .header-img{
     width:40%;
+  }
+
+  .headertext {
+    margin-left: 20px;
+    margin-top: 100px;
   }
 
 
