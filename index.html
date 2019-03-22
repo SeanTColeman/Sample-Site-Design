@@ -7,7 +7,10 @@
     <meta name="keywords" content="coding, html, css, javascript, portfolio">
     <meta name="author" content="Sean Coleman">
     <title>Coffee Shop</title>
+
     <link rel="stylesheet" href="style.css">
+
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
 
@@ -33,7 +36,7 @@
 
     <section class="features">
       <div class="">
-        <h2>Menu Items</h2>
+        <h2>Cafe Menu</h2>
       </div>
       <div class="header-item">
         <div class="header-img">
@@ -64,7 +67,7 @@
           <img src="img/cuisine.jpg" alt="veggies">
           <figcaption>
             <h2>Nutrition</h2>
-            <p>Get your nutrition bitchass</p>
+            <p>Our pork and asparagus meal a protein pack and a great source for other nutrients.</p>
           </figcaption>
         </figure>
 
@@ -75,7 +78,7 @@
       </div>
 
     </section>
-    
+
 
     <section class="section2">
       <div>
@@ -83,7 +86,7 @@
       </div>
     </section>
 
-    <section class="amenities">
+    <!-- <section class="amenities">
       <div class="perks">
         <ul>
           <li>Free Wifi</li>
@@ -92,9 +95,45 @@
           <li>Customer Generated Playlist</li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <footer>
-      123 South St, Philadelphia PA
+      <div class="footer-top">
+        <div class="social-icons">
+          <ul>
+            <li> <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+            <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li> <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+        <div class="contact-form">
+          <form class="NewsletterSignup" action="index.html" method="post">
+            <label for="newsletter-signup">Join our email list</label>
+            <ul>
+              <li class="input newsletter-signup-email"><input type="email" name="newsletter-signup-email" placeholder="Email address" value maxlength="50"></li>
+              <li class="input newsletter-signup-zipcode"><input type="text" name="newsletter-signup-zipcode"
+                placeholder="Zip code" value maxlength="5"></li>
+              <li class="input newsletter-signup-submit">
+                <button type="submit" name="newsletter-signup-submit">Get Started</button>
+              </li>
+            </ul>
+            <p>By clicking "GET STARTED" I agree to receive news, promotions, information, and offers from the Cafe.</p>
+          </form>
+        </div>
+      </div>
+      <div class="footer-main">
+        <div class="info-block">
+          <h3>
+            <a href="#">About Us</a>
+            <button type="button" name="toggle-button" onclick="toggleInfo()">button</button>
+          </h3>
+          <ul>
+            <li><a href="#">Our Company</a></li>
+            <li><a href="#">Cafe Stories</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press Center</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
     <script src="main.js" charset="utf-8"></script>
   </body>

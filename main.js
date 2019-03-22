@@ -29,6 +29,24 @@ function toggleNav() {
 
     toggleNavStatus = false;
   }
+}
 
+let toggleInfoStatus = false;
 
+function toggleInfo() {
+  let infoBlock = document.querySelector('.info-block');
+  let infoBlockUl = document.querySelector('.info-block ul');
+
+  if (toggleInfoStatus === false) {
+    infoBlock.style.height = '160px';
+    infoBlockUl.style.visibility = 'visible';
+
+    toggleInfoStatus = true;
+
+  } else if (toggleInfoStatus === true) {
+    infoBlock.style.height = '20px';
+    infoBlockUl.style.visibility = 'hidden';
+
+    toggleInfoStatus = false;
+  }
 }
