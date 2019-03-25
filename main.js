@@ -30,13 +30,25 @@ function toggleNav() {
   }
 }
 
+
+
+document.getElementById('info-block-btn').addEventListener('click', (event) =>{
+  toggleInfo();
+})
+
 let toggleInfoStatus = false;
 
 function toggleInfo() {
-  let infoBlock = document.querySelector('.info-block');
+
+  if (screen.width < 768) {
+    let toggleInfoStatus = false;
+  }
+
+  let infoBlockBtn = event.currentTarget;
+  let infoBlock = infoBlockBtn.parentNode.parentNode;
   let infoBlockItems = document.querySelectorAll('info-block ul li');
-  let infoBlockUl = document.querySelector('.info-block ul');
-  let infoBlockBtn = document.querySelector('.info-block-btn');
+  let infoBlockUl = infoBlock.childNodes[3];
+
 
   if (toggleInfoStatus === false) {
     infoBlock.style.height = '170px';

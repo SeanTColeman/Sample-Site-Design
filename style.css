@@ -13,11 +13,17 @@ body {
   list-style-type: none;
 }
 
+a {
+  color: #382F2D;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 a:hover {
   text-decoration: underline;
 }
 
-/*  Header */
+/***************************** Header ********************************/
 
 header {
   background-color: rgb(29, 29, 29);
@@ -27,12 +33,6 @@ header {
   height: 290px;
   text-align: center;
   overflow: hidden;
-}
-
-a {
-  color: #382F2D;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
 .main-name {
@@ -116,10 +116,7 @@ nav ul li a {
 
 }
 
-/* RESPONSIVE RULES */
-/* @media screen and (min-width: 400px) {
-
-/* FEATURES */
+/************************* FEATURES ********************************8*/
 
 .features {
   background: white;
@@ -180,51 +177,7 @@ figure img, div img {
 
 }
 
-
-
-
-@media screen and (min-width: 700px) {
-  .header-item {
-    display: flex;
-  }
-
-  .header-img {
-    flex: 1;
-  }
-
-  .headertext {
-    margin-left: 20px;
-    flex: 1.5;
-  }
-
-  .footer-top {
-    display:flex;
-  }
-
-  .footer-top
-
-.social-icons {
-    margin-top: 50px;
-    border-bottom: 1px solid #fff;
-    flex: 1;
-  }
-
-  .social-icons hr {
-    visibility: hidden;
-  }
-
-  .contact-form {
-    flex: 2;
-    border-bottom: 1px solid #fff;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .features {
-    width: 80%;
-    margin: 0 auto;
-  }
-}
+/****************** PICTURE SECTION  ********************************8*/
 
 .section2 {
   height: 300px;
@@ -249,6 +202,8 @@ figure img, div img {
   line-height: 30px;
 }
 
+/***************************** FOOTER *************************/
+
 footer {
   background: #f7f7f7;
   border-bottom: 8px solid #382F2D;
@@ -265,7 +220,6 @@ footer {
 .social-icons {
   font-size: 60px;
   padding-top: 10px;
-
   text-align: center;
 }
 
@@ -331,20 +285,15 @@ footer {
   transition: all 0.2s ease-in-out;
 
   /* height: 160px; */
-
 }
 
 .info-block h3 {
   height: 40px;
-  line-height: 20px;
-  font-weight: bold;
-
-}
-
-.info-block h3 a {
   line-height: 40px;
   margin-left: 10px;
   font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .info-block h3 button {
@@ -364,43 +313,91 @@ footer {
  margin-bottom: 20px;
 }
 
+.quicklinks {
+  height: 170px;
+}
+
+.quicklinks ul {
+  visibility: visible;
+}
+
 .info-block ul li {
   margin-top: 15px;
-
   transition: all 0.2s ease-in-out;
 }
 
-
-
-
-
-
-
-
-.main-content {
-  position: relative;
-  padding-top: 32px;
+.info-block ul li a {
+  text-transform: capitalize;
 }
 
-.container {
-  width: 100%;
-  margin: 0 auto;
-
+.footer-bottom {
+  background: #f0f0f0;
 }
 
-.region {
-  box-sizing: border-box;
-  padding: 0 10px;
+.footer-bottom p {
+  padding: 15px;
+  text-align: center;
 }
 
-.region img {
-  max-width: 100%;
+/*********************** RESPONSIVE RULES *****************************/
+
+@media screen and (min-width: 768px) {
+  .header-item {
+    display: flex;
+  }
+
+  .header-img {
+    flex: 1;
+  }
+
+  .headertext {
+    margin-left: 20px;
+    flex: 1.5;
+  }
+
+  .footer-top {
+    display:flex;
+  }
+
+.social-icons {
+    margin-top: 50px;
+    border-bottom: 1px solid #fff;
+    flex: 1;
+  }
+
+  .social-icons hr {
+    visibility: hidden;
+  }
+
+  .contact-form {
+    flex: 2;
+    border-bottom: 1px solid #fff;
+  }
+
+  .footer-main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .info-block {
+    height: 180px;
+    overflow: visible;
+    border-bottom: 0;
+
+  }
+
+  .info-block h3 button {
+    visibility: hidden;
+  }
+
+  .info-block ul {
+    visibility: visible;
+  }
 }
 
-
-.heading-landing {
-  margin: .25em 0 .66667em;
-  font-weight: normal;
-  font-size: 2rem;
-  line-height: 1.25;
+@media screen and (min-width: 900px) {
+  .features {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
