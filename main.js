@@ -1,6 +1,11 @@
 let toggleNavStatus = false;
 
 function toggleNav() {
+
+  if (screen.width < 768) {
+    let toggleNavStatus = true;
+  }
+
   let toggleBtn = document.querySelector(".nav-toggle-btn");
   let menu = document.querySelector('nav ul');
   let navItems = document.querySelectorAll('.main-nav ul li');
@@ -41,7 +46,7 @@ let toggleInfoStatus = false;
 function toggleInfo() {
 
   if (screen.width < 768) {
-    let toggleInfoStatus = false;
+    let toggleInfoStatus = true;
   }
 
   let infoBlockBtn = event.currentTarget;

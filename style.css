@@ -116,13 +116,12 @@ nav ul li a {
 
 }
 
-/************************* FEATURES ********************************8*/
+/************************* FEATURES ***************************/
 
 .features {
   background: white;
   color: gray;
-  padding: 20px;
-
+  padding: 25px;
 }
 
 .features div h2{
@@ -130,8 +129,9 @@ nav ul li a {
   display: block;
 }
 
-.header-item {;
+.header-item {
   margin: 20px 0;
+  align-items: center;
 }
 
 .headertext {
@@ -148,7 +148,7 @@ nav ul li a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-bottom: 50px;
+  justify-content: space-between;
 }
 
 .menu-items h2 {
@@ -157,18 +157,23 @@ nav ul li a {
 
 
 .menu-items figure {
-  margin: auto;
-  text-align: center;
+  margin: 25px auto;
 
-  width: 200px;
 }
 
 .menu-items figure img {
-  border: 1px solid white;
-  border-radius: 50%;
-  box-shadow: gray 0 0 10px;
-  width: 200px;
-  margin: 20px 0;
+
+  box-shadow: gray 0 0 5px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.menu-items figure figcaption {
+  width: 90%;
+  margin: auto;
+  line-height: 25px;
+  font-size: 18px;
 }
 
 figure img, div img {
@@ -177,7 +182,7 @@ figure img, div img {
 
 }
 
-/****************** PICTURE SECTION  ********************************8*/
+/****************** PICTURE SECTION  **************************/
 
 .section2 {
   height: 300px;
@@ -339,11 +344,42 @@ footer {
   text-align: center;
 }
 
-/*********************** RESPONSIVE RULES *****************************/
+/*********************** RESPONSIVE RULES *********************/
+
+@media screen and (min-width: 650px) {
+  .menu-items figure {
+    width: 300px
+  }
+}
 
 @media screen and (min-width: 768px) {
+  .nav-toggle-btn {
+    visibility: hidden;
+  }
+
+  .buttons {
+    display: inline;
+  }
+
+  nav ul {
+    visibility: visible;
+    width:auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li {
+      opacity: 1;
+      margin: 0 40px;
+
+  }
+
   .header-item {
     display: flex;
+  }
+
+  .headertext {
+    margin-top: 0px;
   }
 
   .header-img {
@@ -353,6 +389,16 @@ footer {
   .headertext {
     margin-left: 20px;
     flex: 1.5;
+  }
+
+  .menu-items figure {
+    width:30%;
+    margin: 25px 0;
+
+  }
+
+  .menu-items figure img {
+    height: 150px;
   }
 
   .footer-top {
@@ -395,9 +441,22 @@ footer {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
   .features {
     width: 80%;
     margin: 0 auto;
+  }
+
+  .header-img {
+    flex: 0.7;
+  }
+
+  .header-img img {
+    width: 400px;
+    height: 250px;
+  }
+
+  .menu-items figure img {
+    height: 200px;
   }
 }
