@@ -30,7 +30,7 @@ header {
 }
 
 a {
-  color: black;
+  color: #382F2D;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -183,8 +183,7 @@ figure img, div img {
 
 
 
-@media screen and (min-width:
-  700px) {
+@media screen and (min-width: 700px) {
   .header-item {
     display: flex;
   }
@@ -202,13 +201,21 @@ figure img, div img {
     display:flex;
   }
 
-  .social-icons {
+  .footer-top
+
+.social-icons {
+    margin-top: 50px;
+    border-bottom: 1px solid #fff;
     flex: 1;
-    border-bottom: 0px solid #fff;;
+  }
+
+  .social-icons hr {
+    visibility: hidden;
   }
 
   .contact-form {
     flex: 2;
+    border-bottom: 1px solid #fff;
   }
 }
 
@@ -245,10 +252,8 @@ figure img, div img {
 footer {
   background: #f7f7f7;
   border-bottom: 8px solid #382F2D;
-
-  font-size: 12px;
+  font-size: 13px;
   color: #382F2D;
-
 }
 
 .footer-top {
@@ -257,22 +262,22 @@ footer {
   border-top: 3px solid #fff;
 }
 
-/* .fa {
-  font-weight: bold;
-  margin: 10px;
-} */
-
 .social-icons {
   font-size: 60px;
-  padding: 20px 0 20px 20px;
-  border-bottom: 1px solid #b3b3b3;
+  padding-top: 10px;
+
+  text-align: center;
 }
 
 .social-icons ul li {
-
-  /* padding-bottom: 25px; */
   display: inline-block;
   width: 55px;
+}
+
+.social-icons hr {
+  width: 80%;
+  text-align: center;
+  margin: 10px auto;
 }
 
 .fa {
@@ -280,7 +285,7 @@ footer {
 }
 
 .contact-form {
-  padding: 30px 0 40px 20px;
+  padding: 15px 0 20px 20px;
 }
 
 .contact-form ul {
@@ -319,33 +324,55 @@ footer {
 }
 
 .info-block {
-  padding: 20px;
+  padding: 10px;
   border-bottom: 1px solid #b3b3b3;
-  height: 20px;
+  height: 40px;
   overflow: hidden;
+  transition: all 0.2s ease-in-out;
+
   /* height: 160px; */
 
 }
 
 .info-block h3 {
-  margin-bottom: 30px;
+  height: 40px;
   line-height: 20px;
   font-weight: bold;
 
 }
 
-.info-block button {
+.info-block h3 a {
+  line-height: 40px;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.info-block h3 button {
   float: right;
+  margin-right: 5px;
+  height: 40px;
+  width: 40px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 .info-block ul {
   visibility: hidden;
-
+  margin-left: 10px;
+ margin-bottom: 20px;
 }
 
 .info-block ul li {
   margin-top: 15px;
+
+  transition: all 0.2s ease-in-out;
 }
+
+
+
+
 
 
 
