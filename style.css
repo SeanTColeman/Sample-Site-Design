@@ -199,12 +199,11 @@ figure img, div img {
 .drinks, .food {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+
 }
 .grid-item {
   width: 45%;
-  margin: 10px auto;
-
 }
 
 .grid-item img {
