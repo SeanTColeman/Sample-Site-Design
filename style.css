@@ -204,6 +204,7 @@ figure img, div img {
 }
 .grid-item {
   width: 45%;
+  margin-bottom: 20px;
 }
 
 .grid-item img {
@@ -504,11 +505,11 @@ footer {
   }
 
   .grid-item img {
-    height: 230px;
+    height: 250px;
   }
 
   .grid-item {
-    width: 25%;
-    margin: 10px 30px;
+    width: 30%;
+
   }
 }
