@@ -120,12 +120,12 @@ nav ul li a {
 
 .features {
   background: white;
-  color: gray;
+
   padding: 25px;
 }
 
-.features div h2{
-  color: black;
+.features h2{
+  color: #3d3a35;
   display: block;
 }
 
@@ -163,7 +163,7 @@ nav ul li a {
 
 .menu-items figure img {
 
-  box-shadow: gray 0 0 5px;
+  box-shadow: gray 0 0 3px;
   width: 100%;
   height: auto;
   margin-bottom: 20px;
@@ -180,6 +180,37 @@ figure img, div img {
   width: 100%;
   height: auto;
 
+}
+
+/*************************** Nutrition ************************* */
+
+.features h2 {
+  margin: 5px 0 25px 0;
+}
+
+.nutrition-text p {
+  margin: 20px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+
+/* PICTURE GALLERY */
+.drinks, .food {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.grid-item {
+  width: 45%;
+  margin: 10px auto;
+
+}
+
+.grid-item img {
+  height: 140px;
+  margin: 10px 0;
+  box-shadow: gray 0 0 3px;
 }
 
 /****************** PICTURE SECTION  **************************/
@@ -370,7 +401,7 @@ footer {
 
   nav ul li {
       opacity: 1;
-      margin: 0 40px;
+      margin: 0 30px;
 
   }
 
@@ -399,6 +430,19 @@ footer {
 
   .menu-items figure img {
     height: 150px;
+  }
+
+  .nutrition-main {
+    display: flex;
+    align-items: center;
+  }
+
+  .grid-item {
+    width: 30%;
+  }
+
+  .grid-item img {
+    height: 160px;
   }
 
   .footer-top {
@@ -458,5 +502,14 @@ footer {
 
   .menu-items figure img {
     height: 200px;
+  }
+
+  .grid-item img {
+    height: 230px;
+  }
+
+  .grid-item {
+    width: 25%;
+    margin: 10px 30px;
   }
 }
