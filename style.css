@@ -24,7 +24,6 @@ a:hover {
 }
 
 /***************************** Header ********************************/
-
 header {
   background-color: rgb(29, 29, 29);
   background-image: url("img/brick-wall.jpg");
@@ -42,8 +41,6 @@ header {
 }
 
 header nav {
-  z-index: 1000;
-  background-size: cover;
   background: rgba(237, 224, 208, 0.63);
   height: 60px;
   padding: 5px;
@@ -63,13 +60,14 @@ nav .logo {
   height: 60px;
   width: 60px;
   margin-left: 10px;
-  float:left;
+  float: left;
 }
 
 nav .nav-toggle-btn {
   width: 50px;
   height: 50px;
-  margin: 5px;;
+  margin: 5px;
+  ;
   background-image: url("img/menubars.png");
   background-repeat: no-repeat;
   background-size: 90%;
@@ -113,18 +111,15 @@ nav ul li:last-child {
 
 nav ul li a {
   font-weight: 600;
-
 }
 
 /************************* FEATURES ***************************/
-
 .features {
   background: white;
-
   padding: 25px;
 }
 
-.features h2{
+.features h2 {
   color: #3d3a35;
   display: block;
 }
@@ -139,10 +134,9 @@ nav ul li a {
 }
 
 .headertext p {
-    margin-top: 10px;
-    line-height: 25px;
+  margin-top: 10px;
+  line-height: 25px;
 }
-
 
 .menu-items {
   display: flex;
@@ -155,14 +149,11 @@ nav ul li a {
   margin-bottom: 10px;
 }
 
-
 .menu-items figure {
   margin: 25px auto;
-
 }
 
 .menu-items figure img {
-
   box-shadow: gray 0 0 3px;
   width: 100%;
   height: auto;
@@ -179,11 +170,9 @@ nav ul li a {
 figure img, div img {
   width: 100%;
   height: auto;
-
 }
 
 /*************************** Nutrition ************************* */
-
 .features h2 {
   margin: 5px 0 25px 0;
 }
@@ -194,14 +183,13 @@ figure img, div img {
   line-height: 20px;
 }
 
-
 /* PICTURE GALLERY */
 .drinks, .food {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
+
 .grid-item {
   width: 45%;
   margin-bottom: 20px;
@@ -214,7 +202,6 @@ figure img, div img {
 }
 
 /****************** PICTURE SECTION  **************************/
-
 .section2 {
   height: 300px;
   width: 100%;
@@ -230,7 +217,7 @@ figure img, div img {
   position: relative;
   top: 50%;
   left: 35%;
-  transform:  translateY(-50%);
+  transform: translateY(-50%);
   text-align: center;
   color: #111;
   font-style: italic;
@@ -239,7 +226,6 @@ figure img, div img {
 }
 
 /***************************** FOOTER *************************/
-
 footer {
   background: #f7f7f7;
   border-bottom: 8px solid #382F2D;
@@ -319,7 +305,6 @@ footer {
   height: 40px;
   overflow: hidden;
   transition: all 0.2s ease-in-out;
-
   /* height: 160px; */
 }
 
@@ -346,7 +331,7 @@ footer {
 .info-block ul {
   visibility: hidden;
   margin-left: 10px;
- margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .quicklinks {
@@ -376,7 +361,6 @@ footer {
 }
 
 /*********************** RESPONSIVE RULES *********************/
-
 @media screen and (min-width: 650px) {
   .menu-items figure {
     width: 300px
@@ -394,15 +378,14 @@ footer {
 
   nav ul {
     visibility: visible;
-    width:auto;
+    width: auto;
     display: flex;
     justify-content: center;
   }
 
   nav ul li {
-      opacity: 1;
-      margin: 0 30px;
-
+    opacity: 1;
+    margin: 0 30px;
   }
 
   .header-item {
@@ -423,9 +406,8 @@ footer {
   }
 
   .menu-items figure {
-    width:30%;
+    width: 30%;
     margin: 25px 0;
-
   }
 
   .menu-items figure img {
@@ -446,10 +428,10 @@ footer {
   }
 
   .footer-top {
-    display:flex;
+    display: flex;
   }
 
-.social-icons {
+  .social-icons {
     margin-top: 50px;
     border-bottom: 1px solid #fff;
     flex: 1;
@@ -473,7 +455,6 @@ footer {
     height: 180px;
     overflow: visible;
     border-bottom: 0;
-
   }
 
   .info-block h3 button {
@@ -510,6 +491,5 @@ footer {
 
   .grid-item {
     width: 30%;
-
   }
 }

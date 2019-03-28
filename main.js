@@ -22,8 +22,7 @@ function toggleNav() {
     }
 
     toggleNavStatus = true;
-  }
-  else if (toggleNavStatus === true) {
+  } else if (toggleNavStatus === true) {
     nav.style.height = '60px';
     menu.style.visibility = 'hidden';
 
@@ -37,7 +36,7 @@ function toggleNav() {
 
 
 
-document.getElementById('info-block-btn').addEventListener('click', (event) =>{
+document.getElementById('info-block-btn').addEventListener('click', (event) => {
   toggleInfo();
 })
 
@@ -60,9 +59,6 @@ function toggleInfo() {
     infoBlockUl.style.visibility = 'visible';
     infoBlockBtn.style.transform = 'rotate(180deg)';
 
-    // for (let i = 0; i < infoBlockItems.length; i++) {
-    //   infoBlockItems[i].style.opacity = 1;
-    // }
 
     toggleInfoStatus = true;
 
@@ -71,9 +67,6 @@ function toggleInfo() {
     infoBlockUl.style.visibility = 'hidden';
     infoBlockBtn.style.transform = 'rotate(0deg)';
 
-    // for (let i = 0; i < infoBlockItems.length; i++) {
-    //   infoBlockItems[i].style.opacity = 1;
-    // }
 
     toggleInfoStatus = false;
   }

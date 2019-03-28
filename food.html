@@ -1,143 +1,145 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a website for a coffee shop.">
-    <meta name="keywords" content="coding, html, css, javascript, portfolio">
-    <meta name="author" content="Sean Coleman">
-    <title>Coffee Shop</title>
 
-    <link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is a website for a coffee shop.">
+  <meta name="keywords" content="coding, html, css, javascript, portfolio">
+  <meta name="author" content="Sean Coleman">
+  <title>Coffee Shop</title>
 
-    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
+  <link rel="stylesheet" href="style.css">
 
-    <header>
-      <nav class="main-nav">
-        <div class="buttons">
-          <a class="logo" href="index.html"> </a>
-          <div class="nav-toggle-btn" onclick="toggleNav()"></div>
-        </div>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="main-nav">
+      <div class="buttons">
+        <a class="logo" href="index.html"> </a>
+        <div class="nav-toggle-btn" onclick="toggleNav()"></div>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="drinks.html">Drinks</a></li>
+        <li><a href="food.html">Food</a></li>
+        <li><a href="nutrition.html">Nutrition</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="main-name">
+      <h1>Sean's Cafe</h1>
+      <br>
+      <h3><i>Grab a bite to eat</i></h3>
+    </div>
+  </header>
+
+  <section class="features">
+    <h2>Explore Our Food</h2>
+    <div class="food">
+
+      <div class="grid-item">
+        <h3>Hamburger</h3>
+        <img src="img/hamburger2.jpg" alt="burger">
+      </div>
+      <div class="grid-item">
+        <h3>Beef Tenderloin</h3>
+        <img src="img/veggies.jpg" alt="veggies">
+      </div>
+      <div class="grid-item">
+        <h3>Salmon</h3>
+        <img src="img/salmon.jpg" alt="salmon">
+      </div>
+      <div class="grid-item">
+        <h3>Pizza</h3>
+        <img src="img/pizza.jpg" alt="pizza">
+      </div>
+      <div class="grid-item">
+        <h3>Antipasto</h3>
+        <img src="img/cuisine.jpg" alt="Antipasto">
+      </div>
+      <div class="grid-item">
+        <h3>Cake</h3>
+        <img src="img/cake.jpg" alt="cake">
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="section2">
+    <div>
+      A coffee a day keeps the lazy away.
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <div class="social-icons">
+        <ul>
+          <li> <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+          <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li> <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+        </ul>
+        <hr>
+      </div>
+      <div class="contact-form">
+        <form class="NewsletterSignup" action="index.html" method="post">
+          <label for="newsletter-signup">Join our email list</label>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="drinks.html">Drinks</a></li>
-            <li><a href="food.html">Food</a></li>
-            <li><a href="nutrition.html">Nutrition</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="input newsletter-signup-email"><input type="email" name="newsletter-signup-email" placeholder="Email address" value maxlength="50"></li>
+            <li class="input newsletter-signup-zipcode"><input type="text" name="newsletter-signup-zipcode" placeholder="Zip code" value maxlength="5"></li>
+            <li class="input newsletter-signup-submit">
+              <button type="submit" name="newsletter-signup-submit">Get Started</button>
+            </li>
           </ul>
-      </nav>
-      <div class="main-name">
-        <h1>Sean's Cafe</h1>
-        <br>
-        <h3><i>Grab a bite to eat</i></h3>
+          <p>By clicking "GET STARTED" I agree to receive news, promotions, information, and offers from the Cafe.</p>
+        </form>
       </div>
-    </header>
-
-    <section class="features">
-      <h2>Explore Our Food</h2>
-      <div class="food">
-
-        <div class="grid-item">
-          <h3>Hamburger</h3>
-          <img src="img/hamburger2.jpg" alt="burger">
-        </div>
-        <div class="grid-item">
-          <h3>Beef Tenderloin</h3>
-          <img src="img/veggies.jpg" alt="veggies">
-        </div>
-        <div class="grid-item">
-          <h3>Salmon</h3>
-          <img src="img/salmon.jpg" alt="salmon">
-        </div>
-        <div class="grid-item">
-          <h3>Pizza</h3>
-          <img src="img/pizza.jpg" alt="pizza">
-        </div>
-        <div class="grid-item">
-          <h3>Antipasto</h3>
-          <img src="img/cuisine.jpg" alt="Antipasto">
-        </div>
-        <div class="grid-item">
-          <h3>Cake</h3>
-          <img src="img/cake.jpg" alt="cake">
-        </div>
-
+    </div>
+    <div class="footer-main">
+      <div class="info-block">
+        <h3>
+          <a href="#">About Us</a>
+          <button type="button" name="toggle-button" id="info-block-btn"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+        </h3>
+        <ul>
+          <li><a href="#">Our Company</a></li>
+          <li><a href="#">Cafe Stories</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press Center</a></li>
+        </ul>
       </div>
-    </section>
+      <div class="info-block">
+        <h3>
+          <a href="#">Online Community</a>
+          <button type="button" name="toggle-button" class="info-block-btn" onclick="toggleInfo()"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+        </h3>
+        <ul>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="info-block quicklinks">
+        <h3>Quick Links</h3>
+        <ul>
+          <li>Nutrition Info</li>
+          <li>Partners</li>
+          <li>Store Hours</li>
+          <li>Customer Service</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Sean's Coffee Company. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="main.js" charset="utf-8"></script>
+</body>
 
-
-    <section class="section2">
-      <div>
-        A coffee a day keeps the lazy away.
-      </div>
-    </section>
-
-    <footer>
-      <div class="footer-top">
-        <div class="social-icons">
-          <ul>
-            <li> <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-            <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <li> <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-          </ul>
-          <hr>
-        </div>
-        <div class="contact-form">
-          <form class="NewsletterSignup" action="index.html" method="post">
-            <label for="newsletter-signup">Join our email list</label>
-            <ul>
-              <li class="input newsletter-signup-email"><input type="email" name="newsletter-signup-email" placeholder="Email address" value maxlength="50"></li>
-              <li class="input newsletter-signup-zipcode"><input type="text" name="newsletter-signup-zipcode"
-                placeholder="Zip code" value maxlength="5"></li>
-              <li class="input newsletter-signup-submit">
-                <button type="submit" name="newsletter-signup-submit">Get Started</button>
-              </li>
-            </ul>
-            <p>By clicking "GET STARTED" I agree to receive news, promotions, information, and offers from the Cafe.</p>
-          </form>
-        </div>
-      </div>
-      <div class="footer-main">
-        <div class="info-block">
-          <h3>
-            <a href="#">About Us</a>
-            <button type="button" name="toggle-button" id="info-block-btn"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-          </h3>
-          <ul>
-            <li><a href="#">Our Company</a></li>
-            <li><a href="#">Cafe Stories</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Press Center</a></li>
-          </ul>
-        </div>
-        <div class="info-block">
-          <h3>
-            <a href="#">Online Community</a>
-            <button type="button" name="toggle-button" class="info-block-btn" onclick="toggleInfo()"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-          </h3>
-          <ul>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">LinkedIn</a></li>
-          </ul>
-        </div>
-        <div class="info-block quicklinks">
-          <h3>Quick Links</h3>
-          <ul>
-            <li>Nutrition Info</li>
-            <li>Partners</li>
-            <li>Store Hours</li>
-            <li>Customer Service</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>Sean's Coffee Company. All rights reserved.</p>
-      </div>
-    </footer>
-    <script src="main.js" charset="utf-8"></script>
-  </body>
 </html>
