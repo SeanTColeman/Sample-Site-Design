@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +9,7 @@
 body {
   background: #fff;
   color: #3d3a35;
-  font-family: Helvetica, arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -203,7 +205,7 @@ figure img, div img {
 
 /****************** PICTURE SECTION  **************************/
 .section2 {
-  height: 300px;
+  height: 200px;
   width: 100%;
   background-image: url('img/coffee-beans-2.jpg');
   background-size: 100% auto;
@@ -211,18 +213,19 @@ figure img, div img {
 }
 
 .section2 div {
-  background: rgba(237, 224, 208, 0.6);
-  padding: 5px;
+  background: rgba(0, 0, 0, 0.47);
+  padding: px;
   width: 60%;
   position: relative;
   top: 50%;
   left: 35%;
   transform: translateY(-50%);
   text-align: center;
-  color: #111;
+  color: #fff;
   font-style: italic;
+  font-weight: thin;
   font-size: 30px;
-  line-height: 30px;
+  line-height: 40px;
 }
 
 /***************************** FOOTER *************************/
@@ -425,6 +428,10 @@ footer {
 
   .grid-item img {
     height: 160px;
+  }
+
+  .section2 {
+    height: 300px;
   }
 
   .footer-top {
