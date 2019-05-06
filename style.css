@@ -135,6 +135,15 @@ nav ul li a {
   margin-top: 20px;
 }
 
+.header-img  {
+  height: 180px;
+  overflow: hidden;
+}
+
+.header-img img {
+  margin-top: -170px;
+}
+
 .headertext p {
   margin-top: 10px;
   line-height: 25px;
@@ -169,7 +178,7 @@ nav ul li a {
   font-size: 18px;
 }
 
-figure img, div img {
+img {
   width: 100%;
   height: auto;
 }
