@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #fff;
+  background: beige;
   color: #3d3a35;
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -181,8 +181,8 @@ figure img, div img {
 
 .nutrition-text p {
   margin: 20px;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 /* PICTURE GALLERY */
@@ -208,12 +208,14 @@ figure img, div img {
   height: 200px;
   width: 100%;
   background-image: url('img/coffee-beans-2.jpg');
+  background-color: #aaa;
+  background-blend-mode: multiply;
   background-size: 100% auto;
   background-position: center;
 }
 
 .section2 div {
-  background: rgba(0, 0, 0, 0.47);
+  border: 5px solid white;
   width: 60%;
   position: relative;
   top: 50%;
@@ -221,7 +223,7 @@ figure img, div img {
   transform: translateY(-50%);
   text-align: center;
   color: #fff;
-  font-style: italic;
+  /* font-style: italic; */
   font-weight: thin;
   font-size: 30px;
   line-height: 40px;
@@ -390,12 +392,12 @@ footer {
     margin: 0 30px;
   }
 
-  .header-item {
-    display: flex;
+  .main-name {
+    font-size: 125%;
   }
 
-  .headertext {
-    margin-top: 0px;
+  .header-item {
+    display: flex;
   }
 
   .header-img {
@@ -405,6 +407,7 @@ footer {
   .headertext {
     margin-left: 20px;
     flex: 1.5;
+    margin-top: 0px;
   }
 
   .menu-items figure {
@@ -419,6 +422,11 @@ footer {
   .nutrition-main {
     display: flex;
     align-items: center;
+  }
+
+  .nutrition-text p {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .grid-item {
@@ -470,6 +478,11 @@ footer {
   .info-block ul {
     visibility: visible;
   }
+  .section2 div {
+    /* width: 50%; */
+    font-size: 60px;
+    line-height: 70px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -478,8 +491,30 @@ footer {
     margin: 0 auto;
   }
 
+  header {
+    height: 55vh;
+    background-attachment: fixed;
+  }
+
+  .main-name {
+    font-size: 250%;
+    top: 10%;
+  }
+
   .header-img {
     flex: 0.7;
+  }
+
+  .header-item {
+    align-items: flex-start;
+  }
+
+  .headertext {
+    font-size: 150%;
+  }
+
+  .headertext p {
+    line-height: 50px;
   }
 
   .header-img img {
@@ -497,5 +532,10 @@ footer {
 
   .grid-item {
     width: 30%;
+  }
+
+  .nutrition-text p {
+    font-size: 20px;
+    line-height: 25px;
   }
 }
