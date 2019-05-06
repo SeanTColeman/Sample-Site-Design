@@ -140,10 +140,6 @@ nav ul li a {
   overflow: hidden;
 }
 
-.header-img img {
-  margin-top:
-}
-
 .headertext p {
   margin-top: 10px;
   line-height: 25px;
@@ -411,6 +407,7 @@ footer {
 
   .header-img {
     flex: 1;
+    max-height: none;
   }
 
   .headertext {
