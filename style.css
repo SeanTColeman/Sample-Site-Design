@@ -136,12 +136,12 @@ nav ul li a {
 }
 
 .header-img  {
-  height: 180px;
+  max-height: 200px;
   overflow: hidden;
 }
 
 .header-img img {
-  margin-top: -170px;
+  margin-top:
 }
 
 .headertext p {
