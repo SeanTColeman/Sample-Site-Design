@@ -13,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -92,7 +93,7 @@ nav ul li {
   line-height: 52px;
   opacity: 0;
   transition: all 0.5s ease 0.1s;
-  /* background: rgba(237, 224, 208, 0.73); */
+
 }
 
 nav ul li:first-child {
