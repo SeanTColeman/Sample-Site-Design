@@ -207,6 +207,7 @@ img {
   height: 140px;
   margin: 10px 0;
   box-shadow: gray 0 0 3px;
+  object-fit: cover;
 }
 
 /****************** PICTURE SECTION  **************************/
